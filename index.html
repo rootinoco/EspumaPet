@@ -3,51 +3,177 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estética Canina - Agenda tu Cita</title>
+    <title>Espuma Pet | Estética Canina y Citas</title>
+    
+    <!-- Metadatos para compartir en WhatsApp y redes sociales -->
+    <meta name="description" content="Agenda el baño, corte o servicio de estética para tu perrito en Espuma Pet.">
+    <meta property="og:title" content="Espuma Pet - Estética Canina">
+    <meta property="og:description" content="Consentimos a tu mejor amigo. Consulta disponibilidad y agenda por WhatsApp.">
+    <meta property="og:type" content="website">
+
     <style>
-        body { font-family: 'Arial', sans-serif; background-color: #f4f9f9; color: #333; margin: 0; padding: 0; text-align: center; }
-        header { background-color: #ff9a9e; color: white; padding: 30px; font-size: 24px; font-weight: bold; }
-        .container { max-width: 600px; margin: 30px auto; padding: 20px; background: white; border-radius: 15px; box-shadow: 0px 4px 10px rgba(0,0,0,0.1); }
-        h2 { color: #ff6b6b; }
-        .servicio { background: #fdf2f2; padding: 15px; margin: 15px 0; border-radius: 10px; border-left: 5px solid #ff9a9e; text-align: left; }
-        .servicio h3 { margin: 0; color: #444; }
-        .btn-agenda { display: inline-block; background-color: #25D366; color: white; padding: 15px 30px; font-size: 18px; text-decoration: none; border-radius: 30px; font-weight: bold; margin-top: 20px; box-shadow: 0px 4px 8px rgba(0,0,0,0.2); }
-        .btn-agenda:hover { background-color: #128C7E; }
+        :root {
+            --primary: #ff758c;
+            --primary-light: #fff0f2;
+            --whatsapp: #25d366;
+            --whatsapp-dark: #1da851;
+            --text-dark: #2d3748;
+            --text-muted: #4a5568;
+            --bg: #f8fafc;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+            background-color: var(--bg);
+            color: var(--text-dark);
+            margin: 0;
+            padding: 0 15px 40px;
+            line-height: 1.5;
+        }
+
+        header {
+            background: linear-gradient(135deg, #ff9a9e 0%, #ff758c 100%);
+            color: white;
+            padding: 35px 20px;
+            font-size: 1.6rem;
+            font-weight: 800;
+            text-align: center;
+            border-radius: 0 0 24px 24px;
+            box-shadow: 0 4px 15px rgba(255, 117, 140, 0.25);
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 25px auto 0;
+            background: white;
+            border-radius: 18px;
+            padding: 24px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        h2 {
+            color: var(--primary);
+            font-size: 1.35rem;
+            margin-top: 0;
+            text-align: center;
+        }
+
+        .intro {
+            text-align: center;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+        }
+
+        .servicio {
+            background: var(--primary-light);
+            padding: 16px;
+            margin-bottom: 14px;
+            border-radius: 12px;
+            border-left: 5px solid var(--primary);
+        }
+
+        .servicio h3 {
+            margin: 0 0 6px;
+            font-size: 1.05rem;
+            color: #1a202c;
+        }
+
+        .servicio p {
+            margin: 0;
+            font-size: 0.95rem;
+            color: var(--text-muted);
+        }
+
+        .calendar-wrapper {
+            margin: 20px 0;
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid #e2e8f0;
+            background: #fff;
+        }
+
+        iframe {
+            display: block;
+            width: 100%;
+            height: 420px;
+            border: none;
+        }
+
+        .cta-container {
+            text-align: center;
+            margin-top: 25px;
+        }
+
+        .btn-agenda {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background-color: var(--whatsapp);
+            color: white;
+            padding: 16px 28px;
+            font-size: 1.05rem;
+            text-decoration: none;
+            border-radius: 35px;
+            font-weight: bold;
+            box-shadow: 0 4px 14px rgba(37, 211, 102, 0.35);
+            transition: all 0.2s ease-in-out;
+            width: 100%;
+            max-width: 380px;
+        }
+
+        .btn-agenda:hover {
+            background-color: var(--whatsapp-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 18px rgba(37, 211, 102, 0.45);
+        }
     </style>
 </head>
 <body>
 
     <header>
-        🐾 Grooming "Espuma Pet" 🐾
+        🐾 Grooming "Espuma Pet"
     </header>
 
-    <div class="container">
+    <main class="container">
         <h2>Nuestros Servicios</h2>
-        <p>Elige el servicio ideal para consentir a tu mejor amigo:</p>
+        <p class="intro">Elige el servicio ideal para consentir a tu mejor amigo:</p>
 
-        <div class="servicio">
+        <section class="servicio">
             <h3>🧼 Baño Completo</h3>
-            <p>Incluye corte de uñas, limpieza de oídos, baño con shampoo especial y secado.</p>
-        </div>
+            <p>Incluye corte de uñas, limpieza de oídos, baño con shampoo especial y secado profesional.</p>
+        </section>
 
-        <div class="servicio">
+        <section class="servicio">
             <h3>✂️ Baño y Corte de Pelo</h3>
-            <p>Todo lo del baño completo más el diseño de corte según la raza de tu perrito.</p>
-        </div>
+            <p>Todo lo del baño completo más estilizado según la raza y tipo de pelaje.</p>
+        </section>
 
-        <div class="servicio">
+        <section class="servicio">
             <h3>🦷 Limpieza Dental Básica</h3>
-            <p>Remoción de sarro superficial y cepillado para un aliento fresco.</p>
+            <p>Remoción de sarro superficial y cepillado para mantener su aliento fresco.</p>
+        </section>
+
+        <h2 style="margin-top: 35px;">📆 Consulta Disponibilidad</h2>
+        <p class="intro">Revisa los horarios libres en nuestro calendario y confirma tu cita por WhatsApp:</p>
+
+        <div class="calendar-wrapper">
+            <iframe 
+                src="https://calendar.google.com/calendar/embed?src=01f7f594a194f2ad6164c3d9cb3fe80a0914501a00301561bedb1678bdcb59e8%40group.calendar.google.com&ctz=America%2FMexico_City" 
+                loading="lazy">
+            </iframe>
         </div>
 
-        <h2>📆 ¿Listo para agendar?</h2>
-        <p>Haz clic en el botón de abajo. Te redirigirá a nuestro WhatsApp donde coordinaremos el día, la hora y el tamaño de tu mascota.</p>
-        <iframe src="https://calendar.google.com/calendar/embed?src=01f7f594a194f2ad6164c3d9cb3fe80a0914501a00301561bedb1678bdcb59e8%40group.calendar.google.com&ctz=America%2FMexico_City" style="border: 0" width="100%" height="450" frameborder="0" scrolling="no"></iframe>
-        <!-- REEMPLAZA EL LINK DE ABAJO CON TU PROPIO ENLACE DE WHATSAPP -->
-        <a href="https://wa.link/ylyeqt" target="_blank" class="btn-agenda">
-            💬 Agendar Servicio por WhatsApp
-        </a>
-    </div>
+        <div class="cta-container">
+            <a href="https://wa.link/ylyeqt" target="_blank" rel="noopener noreferrer" class="btn-agenda">
+                💬 Agendar Cita por WhatsApp
+            </a>
+        </div>
+    </main>
 
 </body>
 </html>
