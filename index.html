@@ -6,7 +6,7 @@
     <title>Espuma Pet | Estética Canina y Citas</title>
     
     <!-- Metadatos para compartir en WhatsApp y redes sociales -->
-    <meta name="description" content="Agenda el baño, corte o servicio de estética para tu perrito en Espuma Pet.">
+    <meta name="description" content="Estética canina en Cortazar, Guanajuato. Agenda el baño, corte o limpieza dental para tu perrito en Espuma Pet.">
     <meta property="og:title" content="Espuma Pet - Estética Canina">
     <meta property="og:description" content="Consentimos a tu mejor amigo. Consulta disponibilidad y agenda por WhatsApp.">
     <meta property="og:type" content="website">
@@ -57,11 +57,24 @@
             box-shadow: 0 4px 15px rgba(255, 117, 140, 0.25);
         }
 
+        /* Texto solo para lectores de pantalla y buscadores (el logo ya dice el nombre) */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            margin: -1px;
+            padding: 0;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+
         header .logo {
             display: block;
-            width: 150px;
-            height: 150px;
-            margin: 0 auto 16px;
+            width: 170px;
+            height: 170px;
+            margin: 0 auto;
             border-radius: 50%;
             object-fit: contain;
             background: white;
@@ -179,8 +192,8 @@
 <body>
 
     <header>
-        <img class="logo" src="logo.png" width="150" height="150" alt="Logo de Espuma Pet: perrito en una tina con espuma">
-        <h1>🐾 Grooming "Espuma Pet"</h1>
+        <img class="logo" src="logo.png" width="170" height="170" alt="Logo de Espuma Pet: perrito en una tina con espuma">
+        <h1 class="sr-only">Espuma Pet - Estética canina</h1>
     </header>
 
     <main class="container">
@@ -203,18 +216,18 @@
         </section>
 
         <h2 style="margin-top: 35px;">📆 Consulta Disponibilidad</h2>
-        <p class="intro">Revisa los horarios libres en nuestro calendario y confirma tu cita por WhatsApp:</p>
+        <p class="intro">Los espacios en blanco del calendario son horarios disponibles. Elige el que mejor te acomode y escríbenos por WhatsApp: nosotros agendamos tu cita.</p>
 
         <div class="calendar-wrapper">
             <iframe
                 title="Calendario de disponibilidad de Espuma Pet"
-                src="https://calendar.google.com/calendar/embed?src=01f7f594a194f2ad6164c3d9cb3fe80a0914501a00301561bedb1678bdcb59e8%40group.calendar.google.com&ctz=America%2FMexico_City" 
+                src="https://calendar.google.com/calendar/embed?src=01f7f594a194f2ad6164c3d9cb3fe80a0914501a00301561bedb1678bdcb59e8%40group.calendar.google.com&ctz=America%2FMexico_City&hl=es&mode=WEEK&wkst=2&showTitle=0&showPrint=0&showTabs=0&showCalendars=0&showTz=0"
                 loading="lazy">
             </iframe>
         </div>
 
         <div class="cta-container">
-            <a href="https://wa.me/524428375459?text=Hola%2C%20quiero%20agendar%20una%20cita%20para%20mi%20mascota%2C%20su%20nombre%20es%3A%20%20%20%20%20%20%20%20%20mi%20nombre%20es%3A%20%20%20%20%20" target="_blank" rel="noopener noreferrer" class="btn-agenda">
+            <a href="https://wa.me/524428375459?text=Hola%2C%20quiero%20agendar%20una%20cita%20para%20mi%20mascota%2C%20mi%20nombre%20es%3A%20" target="_blank" rel="noopener noreferrer" class="btn-agenda">
                 💬 Agendar Cita por WhatsApp
             </a>
         </div>
