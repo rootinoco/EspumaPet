@@ -10,6 +10,11 @@
     <meta property="og:title" content="Espuma Pet - Estética Canina">
     <meta property="og:description" content="Consentimos a tu mejor amigo. Consulta disponibilidad y agenda por WhatsApp.">
     <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_MX">
+    <meta name="theme-color" content="#ff758c">
+
+    <!-- Ícono de la pestaña (emoji, sin archivos extra) -->
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%90%BE%3C/text%3E%3C/svg%3E">
 
     <style>
         :root {
@@ -44,6 +49,12 @@
             text-align: center;
             border-radius: 0 0 24px 24px;
             box-shadow: 0 4px 15px rgba(255, 117, 140, 0.25);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: inherit;
+            font-weight: inherit;
         }
 
         .container {
@@ -131,12 +142,27 @@
             transform: translateY(-2px);
             box-shadow: 0 6px 18px rgba(37, 211, 102, 0.45);
         }
+
+        .btn-agenda:focus-visible {
+            outline: 3px solid var(--text-dark);
+            outline-offset: 3px;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .btn-agenda {
+                transition: none;
+            }
+
+            .btn-agenda:hover {
+                transform: none;
+            }
+        }
     </style>
 </head>
 <body>
 
     <header>
-        🐾 Grooming "Espuma Pet"
+        <h1>🐾 Grooming "Espuma Pet"</h1>
     </header>
 
     <main class="container">
@@ -162,7 +188,8 @@
         <p class="intro">Revisa los horarios libres en nuestro calendario y confirma tu cita por WhatsApp:</p>
 
         <div class="calendar-wrapper">
-            <iframe 
+            <iframe
+                title="Calendario de disponibilidad de Espuma Pet"
                 src="https://calendar.google.com/calendar/embed?src=01f7f594a194f2ad6164c3d9cb3fe80a0914501a00301561bedb1678bdcb59e8%40group.calendar.google.com&ctz=America%2FMexico_City" 
                 loading="lazy">
             </iframe>
