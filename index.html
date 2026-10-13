@@ -10,6 +10,17 @@
     <meta property="og:title" content="Espuma Pet - Estética Canina">
     <meta property="og:description" content="Consentimos a tu mejor amigo. Consulta disponibilidad y agenda por WhatsApp.">
     <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_MX">
+    <meta property="og:url" content="https://rootinoco.github.io/EspumaPet/">
+    <meta property="og:image" content="https://rootinoco.github.io/EspumaPet/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Logo de Espuma Pet, estética canina">
+    <meta name="theme-color" content="#ff758c">
+
+    <!-- Ícono de la pestaña -->
+    <link rel="icon" type="image/png" href="icon-192.png">
+    <link rel="apple-touch-icon" href="icon-192.png">
 
     <style>
         :root {
@@ -44,6 +55,23 @@
             text-align: center;
             border-radius: 0 0 24px 24px;
             box-shadow: 0 4px 15px rgba(255, 117, 140, 0.25);
+        }
+
+        header .logo {
+            display: block;
+            width: 150px;
+            height: 150px;
+            margin: 0 auto 16px;
+            border-radius: 50%;
+            object-fit: contain;
+            background: white;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: inherit;
+            font-weight: inherit;
         }
 
         .container {
@@ -131,12 +159,28 @@
             transform: translateY(-2px);
             box-shadow: 0 6px 18px rgba(37, 211, 102, 0.45);
         }
+
+        .btn-agenda:focus-visible {
+            outline: 3px solid var(--text-dark);
+            outline-offset: 3px;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .btn-agenda {
+                transition: none;
+            }
+
+            .btn-agenda:hover {
+                transform: none;
+            }
+        }
     </style>
 </head>
 <body>
 
     <header>
-        🐾 Grooming "Espuma Pet"
+        <img class="logo" src="logo.png" width="150" height="150" alt="Logo de Espuma Pet: perrito en una tina con espuma">
+        <h1>🐾 Grooming "Espuma Pet"</h1>
     </header>
 
     <main class="container">
@@ -162,14 +206,15 @@
         <p class="intro">Revisa los horarios libres en nuestro calendario y confirma tu cita por WhatsApp:</p>
 
         <div class="calendar-wrapper">
-            <iframe 
+            <iframe
+                title="Calendario de disponibilidad de Espuma Pet"
                 src="https://calendar.google.com/calendar/embed?src=01f7f594a194f2ad6164c3d9cb3fe80a0914501a00301561bedb1678bdcb59e8%40group.calendar.google.com&ctz=America%2FMexico_City" 
                 loading="lazy">
             </iframe>
         </div>
 
         <div class="cta-container">
-            <a href="https://wa.link/ylyeqt" target="_blank" rel="noopener noreferrer" class="btn-agenda">
+            <a href="https://wa.me/524428375459?text=Hola%2C%20quiero%20agendar%20una%20cita%20para%20mi%20mascota%2C%20su%20nombre%20es%3A%20%20%20%20%20%20%20%20%20mi%20nombre%20es%3A%20%20%20%20%20" target="_blank" rel="noopener noreferrer" class="btn-agenda">
                 💬 Agendar Cita por WhatsApp
             </a>
         </div>
